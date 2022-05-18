@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ThueXe</string>
+    <dimen name="text_size_1">16dp</dimen>
+    <dimen name="text_size_2">18dp</dimen>
+    <dimen name="text_size_3">20dp</dimen>
+    <dimen name="text_size_4">30dp</dimen>
+    <string name="required">Required</string>
+</resources>
+

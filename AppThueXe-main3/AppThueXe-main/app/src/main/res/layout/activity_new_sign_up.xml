@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".new_signUp"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scrollbars="none">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/app_logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/car"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/signUp_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="đăng ký"
+                android:textAllCaps="true"
+                android:textColor="@color/blue"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/app_logo" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fullname_signUp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:minHeight="48dp"
+                android:textColorHint="@color/blue"
+                app:helperText="@string/required"
+                app:helperTextTextColor="@android:color/holo_red_dark"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/signUp_layout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_nameSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Họ và tên"
+                    android:inputType=""/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/DoB_signUp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:minWidth="125dp"
+                android:minHeight="48dp"
+                android:textColorHint="@color/blue"
+                app:helperTextTextColor="@android:color/holo_red_dark"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fullname_signUp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/DoB_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="dd/mm/yyyy"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                app:layout_constraintBottom_toTopOf="@+id/email_signUp"
+                app:layout_constraintLeft_toRightOf="@id/DoB_signUp"
+                app:layout_constraintTop_toBottomOf="@id/fullname_signUp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giới tính"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:paddingLeft="4dp"/>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:checked="true"
+                        android:text="Nam" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Nữ" />
+
+                    <RadioButton
+                        android:id="@+id/other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Khác" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/email_signUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"
+                android:textColorHint="@color/blue"
+                app:helperText="@string/required"
+                app:helperTextTextColor="@android:color/holo_red_dark"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/DoB_signUp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_emailSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/phone_signUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"
+                android:textColorHint="@color/blue"
+                app:helperText="@string/required"
+                app:helperTextTextColor="@android:color/holo_red_dark"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/email_signUp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_phoneSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Số điện thoại"
+                    android:inputType="phone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/password_signUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"
+                app:passwordToggleEnabled="true"
+                android:textColorHint="@color/blue"
+                app:helperText="@string/required"
+                app:helperTextTextColor="@android:color/holo_red_dark"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phone_signUp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_passwordSignUp_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Mật Khẩu"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"
+                app:passwordToggleEnabled="true"
+                android:textColorHint="@color/blue"
+                app:helperText="@string/required"
+                app:helperTextTextColor="@android:color/holo_red_dark"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/password_signUp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_passwordSignUp_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Xác nhận lại mật khẩu"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/new_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_size_4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/confirm_password"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

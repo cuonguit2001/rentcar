@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AppThueXe-main3/AppThueXe-main/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/AppThueXe-main3/AppThueXe-main/app/src/main/res/layout/activity_new_sign_up.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main3/AppThueXe-main/app/src/main/res/layout/booking_car_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main3/AppThueXe-main/app/src/main/res/layout/car_detail_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main3/AppThueXe-main/app/src/main/res/layout/cars_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main3/AppThueXe-main/app/src/main/res/layout/cars_layout_adaper.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main3/AppThueXe-main/app/src/main/res/layout/personal_setting_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main3/AppThueXe-main/app/src/main/res/layout/sign_in_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main3/AppThueXe-main/app/src/main/res/layout/sign_up_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main3/AppThueXe-main/app/src/main/res/layout/update_user.xml" value="0.25416666666666665" />
+        <entry key="..\:/AppThueXe-main3/AppThueXe-main/app/src/main/res/layout/user_comment_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2635" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/circle.xml" value="0.2425" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/clear.xml" value="0.255" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/gray_rounded_shape.xml" value="0.222" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/ic_baseline_clear_24.xml" value="0.255" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2635" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/ic_person_add_black_24dp.xml" value="0.222" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/ic_star_yellow_24dp.xml" value="0.129" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/ic_timeline_gray_24dp.xml" value="0.129" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/drawable/star_rate.xml" value="0.204" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/car_detail_layout.xml" value="0.1" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/car_infomation_layout.xml" value="0.25" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/cars_layout.xml" value="0.4" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/person_setting_layout.xml" value="0.264" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/shape.xml" value="0.2453125" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/sign_in_layout.xml" value="0.264" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/sign_up.xml" value="0.264" />
+        <entry key="..\:/Code/LapTrinhMobile/AppThueXe/app/src/main/res/layout/sign_up_layout.xml" value="0.264" />
+        <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/drawable/before.xml" value="0.1985" />
+        <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/drawable/circle.xml" value="0.1985" />
+        <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/drawable/circle_top_left_corner.xml" value="0.1985" />
+        <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/drawable/next.xml" value="0.1985" />
+        <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/layout/activity_new_sign_up.xml" value="0.259375" />
+        <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/layout/booking_car_layout.xml" value="0.4" />
+        <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/layout/car_detail_layout.xml" value="0.264" />
+        <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/layout/cars_layout.xml" value="0.22826086956521738" />
+        <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/layout/personal_setting_layout.xml" value="0.22826086956521738" />
+        <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/layout/sign_in_layout.xml" value="0.22826086956521738" />
+        <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/layout/sign_up_layout.xml" value="0.22826086956521738" />
+        <entry key="..\:/Code/LapTrinhMobile/DoAn/AppThueXe/app/src/main/res/layout/user_comment_layout.xml" value="0.4" />
+        <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/sign_in_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/UIT/2021-2022-HK2/NT118.M22/AppThueXe/app/src/main/res/layout/sign_up_layout.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
