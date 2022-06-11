@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/confirm_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayWhite">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/nameCar_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="@color/colorPrimary">
+
+            <Button
+                android:id="@+id/back_Button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/before" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:text="THUÊ XE"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_3" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameCar_bar"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="60dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/car_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="THÔNG TIN XE"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_3"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="8dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/image_car_carview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            app:cardCornerRadius="8dp">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="90dp"
+                                android:src="@drawable/bmw_m5_img" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/image_car_carview"
+                            android:stretchColumns="1">
+
+                            <TextView
+                                android:id="@+id/name_booking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="8dp"
+                                android:text="BMW M5 G-Power"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_3" />
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:text="Số ghế"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_2" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:text="4"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_2" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:text="Số cửa"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_2" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:text="4"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_2" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:text="Nhiên liệu"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_2" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:text="Xăng"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_2" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:text="Dòng xe"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_2" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:text="Thể thao"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_2" />
+                            </TableRow>
+                        </TableLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="THÔNG TIN KHÁCH HÀNG"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_3"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="8dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/image_userAvatar_carview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="12dp"
+                            app:cardCornerRadius="8dp">
+
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:src="@drawable/user_avatar" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@id/image_userAvatar_carview"
+                            android:stretchColumns="1">
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:text="Họ Tên"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_2" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="3"
+                                    android:paddingLeft="8dp"
+                                    android:text="Nguyễn Văn A"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_2" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:text="CCCD"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_2" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:text="086946007758"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_2" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:text="Ngày sinh"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_2" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:text="10/09/1998"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_2" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:text="SĐT"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_2" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="8dp"
+                                    android:text="0789678569"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_2" />
+                            </TableRow>
+                        </TableLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/colorPrimary"
+                    android:paddingHorizontal="12dp"
+                    android:layout_marginBottom="8dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="8dp"
+                        android:text="THỜI GIAN"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_3"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="90">
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="30">
+                                <TextView
+                                    android:id="@+id/number_of_day_rental"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="center"
+                                    android:layout_centerInParent="true"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/text_size_2"/>
+                            </RelativeLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="60">
+                                <EditText
+                                    android:hint="Ngày bắt đầu"
+                                    android:id="@+id/StartDate2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="12"
+                                    android:inputType="datetime"
+                                    android:imeOptions="actionDone"/>
+
+                                <EditText
+                                    android:hint="Ngày kết thúc"
+                                    android:id="@+id/EndDate2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="12"
+                                    android:inputType="datetime"
+                                    android:imeOptions="actionDone"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/checkDate_warning2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="4dp"
+                            android:paddingLeft="4dp"/>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ĐIỀU KHOẢN"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_3"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="1. Chấp nhận Hộ khẩu/KT3/Passport (Bản gốc) (Giữ lại khi nhận xe)
+                        \n2. Tài sản đặt cọc (1 trong 2 hình thức)
+                        \n- Xe máy (giá trị > 15 triệu) + Cà vẹt (bản gốc)
+                        \n- Hoặc cọc tiền mặt 15 triệu.
+                        \n- Không sử dụng vào mục đích phi pháp, chạy xe cẩn thận, giữ xe sạch sẽ, trả đúng giờ."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CHI TIẾT GIÁ"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_3"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="*">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Đơn giá thuê"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_2" />
+
+                            <TextView
+                                android:id="@+id/don_gia"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="250000 VNĐ"
+                                android:textSize="@dimen/text_size_2"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Phí dịch vụ"
+                                android:textSize="@dimen/text_size_2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="50.000 VNĐ"
+                                android:textSize="@dimen/text_size_2" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Phí bảo hiểm"
+                                android:textSize="@dimen/text_size_2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="50.000 VNĐ"
+                                android:textSize="@dimen/text_size_2" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tổng cộng"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_2" />
+
+                            <TextView
+                                android:id="@+id/total"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="350.000 VNĐ"
+                                android:textSize="@dimen/text_size_2"
+                                android:textStyle="bold" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grayWhite">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/totalPay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radius_top_left"
+            android:backgroundTint="@color/blue">
+
+            <TextView
+                android:id="@+id/confirm_text_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Xác nhận"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_3" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayWhite"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:src="@drawable/background_setting3" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:stretchColumns="1"
+            android:background="@color/colorPrimary">
+            <TableRow
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ngày sinh"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_2"/>
+                <EditText
+                    android:id="@+id/nsUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:text="20/08/1997"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_2"
+                    android:gravity="left"/>
+            </TableRow>
+            <TableRow
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Giới tính"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_2"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/male_up"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Nam" />
+
+                    <RadioButton
+                        android:id="@+id/female_up"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Nữ" />
+
+                    <RadioButton
+                        android:id="@+id/other_up"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Khác" />
+                </RadioGroup>
+            </TableRow>
+            <TableRow
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Điện thoại"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_2"/>
+
+                <EditText
+                    android:id="@+id/phoneUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:text="0879768564"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_2" />
+            </TableRow>
+            <TableRow
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_2"/>
+                <TextView
+                    android:id="@+id/emailUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:text="example123@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_2"
+                    android:gravity="left"
+                    android:hint="true"/>
+            </TableRow>
+        </TableLayout>
+        <Button
+            android:id="@+id/up_info_customer"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Chỉnh sửa"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/clearButton_personalSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grayWhite"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_baseline_clear_24" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:paddingHorizontal="16dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/user_img"/>
+        <EditText
+            android:id="@+id/nameUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="customerName"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
